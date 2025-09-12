@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios';
 import {  toast } from 'react-toastify';
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://personal-expense-tracker-backend-rc20.onrender.com/api';
 
 const TransactionList = ({ transactions, onTransactionDeleted, onEdit }) => {
 
