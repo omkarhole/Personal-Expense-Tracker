@@ -65,7 +65,7 @@ console.log("error in fetching transaction ",e);
         .reduce((sum, t) => sum + Math.abs(t.amount), 0);
 
     if (loading) {
-        return <div className="text-center py-10 " > <Box sx={{ display: 'flex' }}>
+        return <div className="text-center py-10 mx-auto " > <Box sx={{ display: 'flex' }}>
       <CircularProgress />
     </Box></div>;
     }
@@ -87,19 +87,19 @@ console.log("error in fetching transaction ",e);
                             className={`text-2xl font-bold ${totalBalance >= 0 ? "text-green-600" : "text-red-600"
                                 }`}
                         >
-                            ${totalBalance.toFixed(2)}
+                            ₹{totalBalance.toFixed(2)}
                         </p>
                     </div>
                     <div className="bg-green-50 p-4 rounded-lg shadow text-center">
                         <h3 className="text-lg font-semibold">Income</h3>
                         <p className="text-2xl font-bold text-green-600">
-                            ${income.toFixed(2)}
+                            ₹{income.toFixed(2)}
                         </p>
                     </div>
                     <div className="bg-red-50 p-4 rounded-lg shadow text-center">
                         <h3 className="text-lg font-semibold">Expense</h3>
                         <p className="text-2xl font-bold text-red-600">
-                            ${expense.toFixed(2)}
+                           ₹{expense.toFixed(2)}
                         </p>
                     </div>
                 </div>
