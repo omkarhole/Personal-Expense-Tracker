@@ -65,7 +65,7 @@ console.log("error in fetching transaction ",e);
         .reduce((sum, t) => sum + Math.abs(t.amount), 0);
 
     if (loading) {
-        return <div className="text-center py-10 mx-auto " > <Box sx={{ display: 'flex' }}>
+        return <div className="flex items-center justify-center  text-center py-10  " > <Box sx={{ display: 'flex' }}>
       <CircularProgress />
     </Box></div>;
     }
